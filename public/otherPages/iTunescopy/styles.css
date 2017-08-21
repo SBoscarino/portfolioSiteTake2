@@ -1,0 +1,99 @@
+
+/*Global*/
+body {
+  width: 100%;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  background-image: url('./albuca.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-decoration: none;
+}
+
+header {
+  font-size: 40px;
+  color: white;
+  background-color: #336128;
+  margin-bottom: 50px;
+}
+
+
+/*Main Content*/
+.contentContainer {
+  margin: 5%;
+}
+
+.contentShown {
+  text-align: center;
+}
+
+.player {
+  margin-bottom: 50px;
+}
+
+.centered {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-flow: row;
+  justify-content:center;
+}
+
+#search {
+  width:30%;
+}
+
+#submit {
+  background-color: #dad8a8;
+  width: 10%;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+#submit:hover {
+  background-color: #84b567;
+  color: white;
+}
+
+
+
+/*Rendered Results*/
+
+.resultsContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  color:#84b567;
+}
+
+.result {
+  width: 20%;
+  padding: 1%;
+  height: 10%;
+}
+
+
+.song{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.artist {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+}
+
+.song:hover {
+  text-decoration: none;
+  color: #dad8a8;
+}
+
+.artist:hover {
+  text-decoration: none;
+  color: #dad8a8;
+}

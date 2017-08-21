@@ -1,0 +1,171 @@
+
+/*global*/
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Shadows Into Light Two', cursive;
+}
+
+.container {
+  color: white;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+
+/*nav*/
+#navigationBar {
+  display:flex;
+  height: 10%;
+  width: 100%;
+  background-color: green;
+}
+
+#navigationBar div {
+  margin: auto;
+}
+
+
+
+/*header*/
+#circleImage {
+  height:30%;
+  width: 30%;
+  border-radius: 50%;
+}
+
+#header{
+  padding-top: 5%;
+  width: 100%;
+  height:91%;
+  background-image: url('./PortfolioSite/Filler/20150626_101610.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#headerItems {
+display:flex;
+color: white;
+font-size: 100vh;
+}
+
+#headerItems .name, #circleImage {
+margin: auto;
+}
+
+.name {
+  padding-top: 50px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+
+
+/*content*/
+
+#about {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 20%;
+  width: 100%;
+  height: 100%;
+  background-image: url('./PortfolioSite/Filler/20160220_111158.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*parent*/
+.container {
+  display: flex;
+  /*flex-wrap: wrap;
+  flex-direction: column;*/
+  color: green;
+  width: 100%;
+  height: 80%;
+  /*margin:auto;*/
+  background-color: white;
+  opacity: 0.5;
+}
+
+
+#Divabout {
+  flex-basis: 50%;
+  flex: 1;
+  order: 1;
+  margin: 2%, 2%;
+}
+
+#resumeDiv {
+  flex-basis: 50%;
+  flex: 1;
+  order: 1;
+  /*flex-basis: auto;*/
+  margin: 2%, 2%;
+}
+
+#aboutContent {
+  font-size: 20px;
+}
+
+
+
+
+#skills {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 5%;
+  width: 100%;
+  height:10%;
+  background-image: url('./PortfolioSite/Filler/20150626_100114.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+#portfolio {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 5%;
+  width: 100%;
+  height:10%;
+  background-image: url('./PortfolioSite/Artwork/IMGP1000.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+}
+#contact {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 5%;
+  width: 100%;
+  height:10%;
+  background-image: url('./PortfolioSite/Filler/20150703_193543.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+/*button to go back to top*/
+
+
+/*footer*/
+footer {
+  background-color: green;
+  display:flex;
+  align-content: flex-start;
+  height: 10%;
+  width: 100%;
+  color: blue;
+}
+
+footer section {
+    margin: auto;
+
+}

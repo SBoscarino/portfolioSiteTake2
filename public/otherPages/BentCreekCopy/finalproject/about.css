@@ -1,0 +1,193 @@
+body {
+background-color: #F2F1E8;
+margin: 0;
+}
+
+nav {
+  background-color:#FFFFFF;
+  font-size: 1.3em;
+  list-style: none;
+  display:flex;
+  text-decoration: none;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.jar {
+  display:flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+li a{
+  /*padding-left: 20px;*/
+  padding-right: 60px;
+  color:#2B2F26;
+}
+
+li a:hover {
+color: #CD5D67;
+}
+
+li a:active{
+color: #968772;
+}
+
+.wordsinabox {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+
+.logojar1 {
+  max-height: 50px;
+  padding-left: 10px;
+  padding-top: 10px;
+  position: absolute;
+}
+
+
+.words3, .words2, .words1 {
+font-size: 30px;
+}
+
+.artists {
+text-align: center;
+font-size: 60px;
+
+}
+
+.artists, .top-half, .facilities-flex, .monthly-plans, .table {
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.firstflex {
+  /*display:flex;
+  flex-flow: column;*/
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.birdhouse {
+  /*display:flex;
+  justify-content: left;*/
+  float: left;
+  margin: 0 0 10px 10px;
+  width: 15%;
+  height: 15%;
+  padding-right: 10px;
+}
+
+
+
+.quote {
+  font-size: 20px;
+  line-height: 20px;
+  font-style: italic;
+  border-left: 1px brown solid;
+  color: brown;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom:10px;
+}
+
+.history-info {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.history-info > p {
+  font-style: none;
+}
+
+.room-to-grow {
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  background-image: url("./images/product-1.jpg");
+  background-size: 140%;
+  background-position: center;
+  color: white;
+  font-style: thin;
+  font-size: 60px;
+  display:flex;
+  flex-flow:row;
+  justify-content: center;
+}
+
+
+.facilities-flex {
+  padding-top: 50px;
+	display: flex;
+}
+
+.facilities-miniflex {
+  /*display:flex;
+  justify-content: left;*/
+  width: 65%;
+}
+
+.facilities-p {
+  font-size: 20px;
+  line-height: 40px;
+  padding-right: 20px;
+}
+
+.image-and-info {
+  /*display:flex;
+  justify-content: right;*/
+  padding-top: 100px;
+  font-style: italic;
+  width: 25%;
+}
+
+.tinyimage {
+  height: 100px;
+  width: 120px;
+}
+
+
+
+
+
+table {
+    width:90%;
+    padding-bottom: 20px;
+
+}
+
+td {
+    border: 1px solid #968772;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+  border: 1px solid #968772;
+  text-align: center;
+  font-style: none;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2eadc;
+}
+
+
+
+
+
+
+footer {
+  background-color: #2b2f26;
+  color:#F2F1E8;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  width: 100%;
+}
