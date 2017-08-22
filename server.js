@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.post('/sendEmail', (req, res) => {
   var helper = require('sendgrid').mail;
   var fromEmail = new helper.Email(req.body.fromEmail);
-  var toEmail = new helper.Email(process.env.TO_EMAIL);
+  var toEmail = new helper.Email(process.env.EMAIL);
   var subject = 'Email from your webfrom';
   var content = new helper.Content('text/plain', req.body.content);
   var mail = new helper.Mail(subject, fromEmail, firstName, lastName, phone, content);
