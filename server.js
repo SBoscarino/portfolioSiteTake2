@@ -14,8 +14,8 @@ app.post('/sendEmail', (req, res) => {
   var fromEmail = new helper.Email(req.body.fromEmail);
   var toEmail = new helper.Email(process.env.EMAIL);
   var subject = 'Email from your webfrom';
-  var content = new helper.Content('text/plain', req.body.content);
-  var mail = new helper.Mail(subject, fromEmail, firstName, lastName, phone, content);
+  var content = new helper.Content('text/plain', "Phone: " + req.body.phone + "last name: " + req.body.lastName + req.body.content);
+  var mail = new helper.Mail(fromEmail, subject, toEmail, content);
 
   var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
   var request = sg.emptyRequest({
