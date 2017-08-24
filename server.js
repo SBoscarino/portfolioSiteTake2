@@ -10,11 +10,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 //sending emails with endGrid
 app.post('/sendEmail', (req, res) => {
+  console.log(req.body);
   var helper = require('sendgrid').mail;
   var fromEmail = new helper.Email(req.body.fromEmail);
   var toEmail = new helper.Email(process.env.EMAIL);
   var subject = 'Email from your webfrom';
-  var content = new helper.Content('text/plain', "Phone: " + req.body.phone + "last name: " + req.body.lastName + req.body.content);
+  var content = new helper.Content('text/plain', "Phone: " + req.body.phone + "last name: " + req.body.lastName +req.body.content);
   var mail = new helper.Mail(fromEmail, subject, toEmail, content);
 
   var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);

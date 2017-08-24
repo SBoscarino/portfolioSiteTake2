@@ -29,11 +29,11 @@ a {
 #navigationBar {
   font-family: 'Poiret One', cursive;
   display:flex;
+  height:50px;
   justify-content: flex-start space-around;
-  height: 8%;
-  font-size: 2em;
-  padding-top: .5%;
-  padding-bottom: .5%;
+  font-size: 3em;
+  padding-top: 7px;
+  padding-bottom: 7px;
   width: 100%;
   background-color: #eace6a;
   position: fixed;
@@ -63,17 +63,18 @@ a {
   background-size: contain;
   margin-left: 0;
   padding-left: 0;
-  height: 7vh;
-  width:7vw;
+  height: 50px;
+  width:50px;
 }
 
 
 
 /*header*/
 #header{
-  padding-top: 10%;
+  padding-top: 64px;
   width: 100%;
-  height:91%;
+  /*height:83%;*/
+  min-height: calc(100vh - 64px);
   background-image: url('./logo_Boscarino_with_letters.svg');
   color:#ffb8a4;
    -webkit-text-stroke: 2px black;
@@ -94,7 +95,8 @@ margin: auto;
 }
 
 .name {
-  padding-top: 50vh;
+  padding-top: 65vh;
+  padding-left: 5px;
 }
 
 
@@ -105,11 +107,12 @@ margin: auto;
 /*About*/
 
 #about {
-  padding-top: 5%;
+  padding-top: 3%;
   background-color: #ffb8a4;
   text-align: center;
   width: 100%;
-  height:91%;
+  /*height:91%;*/
+  height: 900px;
 }
 
 .container {
@@ -120,8 +123,8 @@ margin: auto;
 }
 
 #circleImage {
-  height:30vh;
-  width: 30vh;
+  height:30%;
+  width: 30%;
   border-radius: 50%;
 }
 
@@ -146,7 +149,7 @@ margin: auto;
   margin-bottom: 20px;
 }
 #resumeHR{
-  margin-bottom: 3vh;
+  margin-bottom: 3%;
 }
 
 #resume{
@@ -155,7 +158,7 @@ margin: auto;
   background-size: contain;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  height:60vh;
+  height:500px;
 }
 
 #aboutContent {
@@ -173,7 +176,8 @@ margin: auto;
   text-align: center;
   padding-top: 5vh;
   width: 100%;
-  height:95vh;
+  /*height:95%;*/
+  height: 900px;
   background-color: #c1dfd7;
 }
 
@@ -192,14 +196,14 @@ margin: auto;
 #skillText{
   display: flex;
   width: 100%;
-  height: 10vh;
+  height: 10%;
   justify-content: space-around;
-  padding-bottom: 2vh;
+  padding-bottom: 2%;
 }
 
 #icons {
   width:80%;
-  height:50vh;
+  height:50%;
   padding-right:1%;
   padding-bottom: 3%;
 }
@@ -293,9 +297,9 @@ margin: auto;
 #portfolio {
   font-size: 50px;
   text-align: center;
-  padding-top: 3vh;
+  padding-top: 2%;
   width: 100%;
-  height: 98vh;
+  height: 950px;
   background-color: #6d6e72;
 }
 
@@ -306,12 +310,13 @@ margin: auto;
 #portfolio-flex {
   display:flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   background-image:url('./logo_Boscarino.svg');
   background-attachment: fixed;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  padding-bottom: 20vh;
+  padding-bottom: 37%;
   }
 
 #pOne {
@@ -326,12 +331,14 @@ margin: auto;
 #pThree {
   background-image: url('./portfolioImages/gamePic.png');
 }
+
 .portfolioItems {
+  font-size: 70px;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  height:25vh;
-  width: 30vw;
+  height:250px;
+  width: 450px;
 }
 
 .grow {
@@ -363,8 +370,8 @@ margin: auto;
 
 #connect {
   font-size: 20px;
-  width: 100vw;
-  height: 85vh;
+  width: 100%;
+  height: 800px;
   background-color: #c1dfd7;
 }
 
@@ -373,12 +380,13 @@ margin: auto;
   width:100%;
   display:flex;
   justify-content: center;
+  justify-content: space-around;
 }
 
 #social_icons i{
   color: black;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 2%;
+  padding-right: 2;
 }
 
 #social_icons i:hover{
@@ -400,13 +408,13 @@ margin: auto;
   font-size: 50px;
   text-align: center;
   background-color: white;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 
 .flex-outer {
-  font-size: 4vh;
+  font-size: 2em;
   list-style-type: none;
   padding: 0;
 }
@@ -449,8 +457,8 @@ margin: auto;
 
 .flex-outer li input:not([type='checkbox']),
 .flex-outer li textarea {
-  font-size: 40%;
-  padding: 20px;
+  font-size: 30%;
+  padding: 15px;
   border: none;
 }
 
@@ -475,24 +483,24 @@ margin: auto;
 /*footer*/
 footer {
   display:flex;
-  height: 5vh;
+  margin-top: 4px;
+  height: 60px;
   font-size: 2em;
   width: 100%;
   background-color: #eace6a;
   color: white;
-  display:flex;
-  align-content: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 footer section {
-    margin: auto;
-
+    margin-left: 20px;
 }
 
 #myBtn{
-  margin-left: auto;
-  padding: 1vh 3vw;
-  height:3vh;
+  margin-top: 6px;
+  padding: 10px 25px;
   border: none;
   background: #333;
   color: #f2f2f2;
@@ -510,11 +518,8 @@ footer section {
 
 
 
-
-
-
 /*/////////////////////////////////*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
 html,body
 {
     width: 100%;
@@ -525,10 +530,10 @@ html,body
 }
 
   #header{
-    width: 100vw;
-    height:100vh;
-    background-position: 50% 50%;
-    background-size: 93%;
+    width: 100%;
+    height:100%;
+    background-position: 50% 40%;
+    background-size: 80%;
   }
 
   .name {
@@ -537,8 +542,8 @@ html,body
   }
 
   #about {
-    padding-top: 12%;
-    height:95%;
+    padding-top: 2%;
+    height:100%;
   }
 
   #circleImage {
@@ -570,8 +575,8 @@ html,body
 
   #skills {
     text-align: center;
-    padding-top: 6vh;
-    height:97vh;
+    padding-top: 2%;
+    height:100%;
   }
 
   #icons {
@@ -586,12 +591,12 @@ html,body
   }
 
 
-
   #portfolio {
     background-color: #ffb8a4;
+    background-image: none;
     padding-top: 6vh;
     width: 100%;
-    height: 95vh;
+    height: 100%;
   }
 
 
@@ -606,7 +611,9 @@ html,body
 
 
   #connect {
+    background-image: none;
     width: 100%;
+    height: 90%;
   }
 
   .formBackground {
@@ -621,11 +628,135 @@ html,body
   }
 
   form {
-    padding-top: 20%;
+    padding-top: 10%;
   }
 
   label {
     font-size: 40px;
   }
+}
 
+
+/*/////////////////////////////////*/
+@media screen and (max-width: 480px) {
+#navigationBar {
+  font-size: 20px;
+  height: 30px;
+  padding-bottom: 0;
+}
+#logo {
+  height:0px;
+  width:0px;
+}
+#header {
+  background-size: 60%;
+}
+#headerItems {
+  padding-top: 300px;
+  display:flex;
+  flex-flow: row wrap;
+}
+.name {
+  padding-top: 0;
+  font-size: 70px;
+}
+#about h1 {
+  font-size: 35px;
+}
+#circleImage{
+  height: 40px;
+  width: 40px;
+}
+#skills h1 {
+  font-size: 35px;
+}
+#portfolio h1 {
+  font-size: 35px;
+}
+#aboutContent.content {
+  font-size: 10px;
+}
+#skillText {
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+#icons img{
+  height:40px;
+  width:40px;
+}
+#portfolio {
+  padding-top: 3px;
+  background-image: none;
+}
+.textOnHover:hover {
+  font-size:15px;
+  width:100%;
+}
+#portfolio-flex {
+  padding-top: 3px;
+  padding-bottom: 0;
+}
+.portfolioItems {
+  height:60px;
+  width: 140px;
+}
+#connect h1 {
+  font-size: 20px;
+}
+#social_icons {
+  height:10%;
+}
+#connect {
+  background-image: none;
+  height:85%;
+}
+.flex-outer {
+  font-size: 10px;
+}
+.flex-outer {
+  width: 90%;
+}
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.flex-outer li label,
+.flex-outer li p {
+  padding: 4px;
+}
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  font-size: 10px;
+  padding: 5px;
+}
+.flex-outer li label {
+  font-size: 20px;
+}
+.flex-outer li button {
+  padding: 10px 15px;
+}
+#submitButton:hover {
+  background-color: white;
+  color: black;
+}
+footer {
+  margin-top: 2px;
+  padding-bottom: 2px;
+  height: 30px;
+  font-size: 20px;
+}
+#myBtn{
+  margin-top: 6px;
+  padding: 5px 15px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+#myBtn:hover {
+  background-color: white;
+  color: black;
+}
+@media screen and (max-width: 480px)
 }
