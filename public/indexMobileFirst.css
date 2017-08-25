@@ -1,0 +1,114 @@
+/*mobile*/
+@media screen and (max-width: 414px){
+  body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Poiret One', cursive;
+    background-color: #c1dfd7;
+  }
+  .container {
+    color: black;
+    margin: 0 auto;
+    width: 100%;
+  }
+  a {
+    text-decoration: none;
+  }
+  #navigationBar {
+    display:flex;
+    height:30px;
+    /*NEEDPHOTORESIZEDFIRSTjustify-content: center;*/
+    font-size: 20px;
+    padding: 2px;
+    width: 100%;
+    background-color: #eace6a;
+    position: fixed;
+    z-index:1;
+  }
+  #navigationBar a {
+    text-decoration: none;
+    padding: 4px;
+    color: black;
+  }
+  #navigationBar div:hover {
+    color: white;
+  }
+  #navigationBar div:active {
+    color: #ffb8a4;
+  }
+  #header{
+    padding-top: 64px;
+    width: 100%;
+    /*height:83%;*/
+    min-height: calc(100vh - 64px);
+    background-image: url('./logo_Boscarino_with_letters.svg');
+    color:#ffb8a4;
+     -webkit-text-stroke: 1px black;
+    background-position: 50% 40%;
+    background-attachment: fixed;
+    background-size: 90%;
+    background-repeat: no-repeat;
+  }
+  #headerItems {
+  display:flex;
+  font-size: 40px;
+
+  }
+  #headerItems .name, #circleImage {
+  margin: auto;
+  }
+  .name {
+    padding-top: 63vh;
+    padding-left: 5px;
+  }
+  #about {
+    padding-top: 3%;
+    background-color: #ffb8a4;
+    text-align: center;
+    width: 100%;
+  }
+  #aboutContent {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #about h1 {
+    background-color: white;
+    margin-right: 30px;
+    margin-left:30px;
+  }
+  #resumeDiv {
+    padding-top: 1px;
+    background-color: #eace6a;
+  }
+  #resumeDiv h1 {
+    background-color: white;
+    margin-right: 30px;
+    margin-left:30px;
+  }
+  #resumeHR{
+    margin-bottom: 3%;
+  }
+  #resume{
+    background-image: url('./ResumeScreenshot.png');
+    background-position: center;
+    background-size: contain;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    height:400px;
+  }
+
+  #circleImage {
+    height:50%;
+    width: 50%;
+    border-radius: 50%;
+    margin-bottom: 50px;
+  }
+  #icons img {
+    height: 15px;
+    width: 15px;
+  }
+}
+/*tablets and below*/
+@media screen and (max-width: 746px){
+
+}
