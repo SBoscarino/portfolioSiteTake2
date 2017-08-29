@@ -44,7 +44,7 @@ a {
   color:#ffb8a4;
    -webkit-text-stroke: 1px black;
   background-position: 50% 40%;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: 90%;
   background-repeat: no-repeat;
 }
@@ -130,6 +130,9 @@ padding-bottom:30px;
   justify-content: space-between;
   padding-bottom: 20px;
 }
+#skillText div {
+  flex-basis: 33%;
+}
 #icons {
   margin-left: 60px;
   margin-right: 60px;
@@ -151,12 +154,18 @@ padding-bottom:30px;
 }
 #portfolio-flex {
   display:flex;
-  justify-content: center;
   flex-direction: column;
   padding-bottom: 10px;
-  width:50%;
   color:white;
   }
+#portfolio-flex div {
+    margin: 0 auto;
+}
+.only-visible-in-small {
+  font-size: 40px;
+  padding:0px;
+  margin:0px;
+}
 #pOne {
   background-image:url('./portfolioImages/bentCreek.png');
 }
@@ -180,8 +189,9 @@ padding-bottom:30px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height:125px;
-  width: 250px;
+  height:225px;
+  width: 300px;
+  padding: 0px;
 }
 #connect {
   padding-top: 31px;
@@ -189,9 +199,8 @@ padding-bottom:30px;
   background-color: #c1dfd7;
 }
 #social_icons {
-  height:20px;
   width:100%;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   display:flex;
   justify-content: center;
   justify-content: space-around;
@@ -216,9 +225,6 @@ padding-bottom:30px;
   margin-right: 30px;
   margin-left:30px;
 }
-form {
-  padding-bottom: 5px;
-}
 .flex-outer {
   font-size: 20px;
   list-style-type: none;
@@ -234,11 +240,11 @@ form {
   align-items: center;
 }
 .flex-outer > li:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .flex-outer li label,
 .flex-outer li p {
-  padding: 6px;
+  padding: 10px;
   text-transform: uppercase;
 }
 .flex-outer > li > label,
@@ -248,7 +254,7 @@ form {
 }
 
 .flex-outer > li > label + * {
-  flex: 1;
+  width:100%;
 }
 
 .flex-outer li p {
@@ -257,8 +263,8 @@ form {
 
 .flex-outer li input:not([type='checkbox']),
 .flex-outer li textarea {
-  font-size: 40%;
-  padding: 10px;
+  font-size: 70%;
+  padding: 20px 5px;
   border: none;
 }
 
@@ -311,6 +317,9 @@ visibility: hidden;
     justify-content: center;
     font-size: 40px;
     padding: 5px;
+  }
+  #header {
+    background-attachment: fixed;
   }
   .name {
     font-size: 85px;
@@ -705,5 +714,21 @@ visibility: hidden;
     margin-top: 0px;
     height: 60px;
     font-size: 2em;
+  }
+  #myBtn{
+    visibility: visible;
+    margin-top: 6px;
+    padding: 10px 25px;
+    border: none;
+    background: #333;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+  }
+
+  #myBtn:hover {
+    background-color: white;
+    color: black;
   }
 }
