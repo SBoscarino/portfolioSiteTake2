@@ -81,8 +81,8 @@ margin: auto;
 }
 #resumeDiv h1 {
   background-color: white;
-  margin-right: 30px;
-  margin-left:30px;
+  margin-right: 20px;
+  margin-left:20px;
 }
 #resumeHR{
   margin-bottom: 3%;
@@ -465,7 +465,7 @@ visibility: hidden;
   }
   #circleImage {
     height:30%;
-    width: 40%;
+    width:45%;
     border-radius: 50%;
     margin-bottom: 50px;
   }
