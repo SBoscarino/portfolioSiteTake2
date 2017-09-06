@@ -184,6 +184,9 @@ padding-bottom:30px;
 #pFive {
   background-image: url('./portfolioImages/listimage.png');
 }
+#pSix {
+  background-image: url('./portfolioImages/catSiteImg.png');
+}
 
 .portfolioItems {
   background-position: center;
