@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>iTunes Music Search</title>
+  <title>iTunes API Search</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1 class="centered">Really Awesome Music Site</h1>
-    </header>
-    <section class="player centered">
-      <audio class="music-player" controls="controls" src=""></audio>
+  <header>
+    <div class="centered">
+      <h1>Music Sampling</h1>
+      <h1>With the iTunes API!</h1>
+    </div>
+  </header>
+  <div class="contentContainer">
+    <section class="player centered hide">
+      <audio class="musicPlayer" controls="controls" src=""></audio>
     </section>
     <hr>
     <section class="search">
       <form class="search-form">
-        <input type="text" class="input" name="search" placeholder="Find music...">
-        <button class="search-button">Search!</div>
-          <hr>
-          <h1 class="searchResults"></h1>
+        <input id="search" type="text" name="search-term" placeholder="Let's find some music!" />
+        <button id="submit">Search</button>
       </form>
     </section>
-
-    <section class="results centered"></section>
-
-  <script src="main.js"></script>
+    <hr>
+    <section class="resultsContainer centered">
+    </section>
+</div>
+  <script src="new.js"></script>
 </body>
 </html>
